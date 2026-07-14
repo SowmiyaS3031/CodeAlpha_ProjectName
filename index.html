@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+
+        <h1>Image Gallery</h1>
+
+        <p>Explore Beautiful Images</p>
+
+      <div class="top-bar">
+
+    <div class="filters">
+
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+        <button class="filter-btn" data-filter="people">People</button>
+        <button class="filter-btn" data-filter="miscellaneous">
+    Miscellaneous
+</button>
+    
+
+    </div>
+
+    <div class="actions">
+
+        <label for="imageUpload" class="upload-btn">
+            <i class="fa-solid fa-plus"></i> Add Image
+        </label>
+
+        <input type="file" id="imageUpload" accept="image/*" hidden>
+
+        <button id="themeToggle">
+            🌙 Dark Mode
+        </button>
+
+    </div>
+
+</div>
+
+    </header>
+
+    <section class="gallery">
+
+        <div class="image nature">
+            <img src="images/nature1.jpg" alt="Nature 1" loading="lazy">
+        </div>
+
+        <div class="image nature">
+            <img src="images/nature2.jpg" alt="Nature 2" loading="lazy">
+        </div>
+
+        <div class="image nature">
+            <img src="images/nature3.jpg" alt="Nature 3" loading="lazy">
+        </div>
+
+        <div class="image city">
+            <img src="images/city1.jpg" alt="City 1" loading="lazy">
+        </div>
+
+        <div class="image city">
+            <img src="images/city2.jpg" alt="City 2" loading="lazy">
+        </div>
+
+        <div class="image city">
+            <img src="images/city3.jpg" alt="City 3" loading="lazy">
+        </div>
+
+        <div class="image animals">
+            <img src="images/animal1.jpg" alt="Animal 1" loading="lazy">
+        </div>
+
+        <div class="image animals">
+            <img src="images/animal2.jpg" alt="Animal 2" loading="lazy">
+        </div>
+
+        <div class="image animals">
+            <img src="images/animal3.jpg" alt="Animal 3" loading="lazy">
+        </div>
+        <div class="image people">
+    <img src="images/people1.jpg" alt="People 1" loading="lazy">
+</div>
+
+<div class="image people">
+    <img src="images/people2.jpg" alt="People 2" loading="lazy">
+</div>
+
+<div class="image people">
+    <img src="images/people3.jpg" alt="People 3" loading="lazy">
+</div>
+<div class="image miscellaneous">
+    <img src="images/misc1.jpg" alt="Gaming Setup" loading="lazy">
+</div>
+
+<div class="image miscellaneous">
+    <img src="images/misc2.jpg" alt="Coffee Cup" loading="lazy">
+</div>
+
+<div class="image miscellaneous">
+    <img src="images/misc3.jpg" alt="Books" loading="lazy">
+</div>
+
+    </section>
+
+    <div class="lightbox">
+
+    <span class="close">&times;</span>
+
+    <button class="prev">
+        <i class="fa-solid fa-angle-left"></i>
+    </button>
+
+    <img id="lightbox-img" src="" alt="Preview">
+
+    <div class="counter">
+        <span id="current">1</span> /
+        <span id="total">9</span>
+    </div>
+
+    <button class="next">
+        <i class="fa-solid fa-angle-right"></i>
+    </button>
+
+    <button id="deleteImage">
+        <i class="fa-solid fa-trash"></i> Delete
+    </button>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
